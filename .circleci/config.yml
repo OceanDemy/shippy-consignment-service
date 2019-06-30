@@ -7,10 +7,10 @@ jobs:
       # in order to build our service.
       # We're using a container I made, which configurs the Google Cloud SDK
       # Kubernetes, and a few other utils. This is open-source, and you can find
-      # the repo here https://github.com/EwanValentine/gcloud-docker-kubernetes 
+      # the repo here https://github.com/oceandemy/gcloud-docker-kubernetes 
       #
       # Then we're using the docker image itself, so that we can build docker containers.
-      - image: ewanvalentine/gcdeploy:latest
+      - image: oceandemy/gcdeploy:latest
         environment:
           GCLOUD_PROJECT_NAME: shippy-freight
           GCLOUD_CLUSTER_NAME: shippy-freight-cluster

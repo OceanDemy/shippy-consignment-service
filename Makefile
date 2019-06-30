@@ -1,8 +1,8 @@
 build:
 	protoc -I. --go_out=plugins=micro:. \
 		proto/consignment/consignment.proto
-	docker build -t ewanvalentine/consignment:latest .
-	docker push ewanvalentine/consignment:latest
+	docker build -t oceandemy/consignment:latest .
+	docker push oceandemy/consignment:latest
 
 run:
 	docker run -d --net="host" \
